@@ -13,8 +13,8 @@ String makeId(int length) {
 }
 
 const Map<String, String> configs = {
-  'ZOOM_SDK_KEY': 'LupvplQS7aBS45VHTppkFCaabmb5n1rkP3gk',
-  'ZOOM_SDK_SECRET': 'rCmikpDq95j6Mf1LokbPbLPuOiUME5lQXxII',
+  'ZOOM_SDK_KEY': '',
+  'ZOOM_SDK_SECRET': '',
 };
 
 String generateJwt(String sessionName, String roleType) {
