@@ -127,9 +127,6 @@ Replace 'YOUR_GENERATED_JWT' and 'MEETING_ID' with actual values.
 ---
 
 
-
----
-
 ## Resources
 
 - [Integrate Flutter Zoom VideoCalling](https://medium.com/@darasat/integratar-flutter-zoom-videocalling-960dbec5b8f7)  
