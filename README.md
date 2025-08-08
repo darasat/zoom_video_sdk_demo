@@ -1,25 +1,33 @@
-zoom_video_sdk_demo
-This Flutter project demonstrates how to integrate Zoom Video SDK to enable video calls, following the tutorial explained in my Medium article:
-Integrate Flutter with Zoom VideoCalling
+# zoom_video_sdk_demo
 
-Overview
-This app uses the flutter_zoom_videosdk package to connect with Zoom’s native SDK, allowing users to join video sessions authenticated via JWT.
+This Flutter project demonstrates how to integrate Zoom Video SDK to enable video calls, following the tutorial explained in my Medium article:  
+[Integrate Flutter with Zoom VideoCalling](https://medium.com/@darasat/integratar-flutter-zoom-videocalling-960dbec5b8f7)
+
+---
+
+## Overview
+
+This app uses the `flutter_zoom_videosdk` package to connect with Zoom’s native SDK, allowing users to join video sessions authenticated via JWT.
 
 The article walks through the entire process — from initial setup, JWT generation, to Flutter implementation.
 
-Prerequisites
-Flutter installed (Flutter installation guide)
+---
 
-Zoom Developer account with SDK Key and SDK Secret from Zoom Marketplace
+## Prerequisites
 
-Camera and microphone permissions configured for Android and iOS
+- Flutter installed ([Flutter installation guide](https://flutter.dev/docs/get-started/install))  
+- Zoom Developer account with SDK Key and SDK Secret from [Zoom Marketplace](https://marketplace.zoom.us/)  
+- Camera and microphone permissions configured for Android and iOS  
 
-Key Integration Steps
-1. Add dependencies
-Add these to your pubspec.yaml:
+---
 
-yaml
-Copiar código
+## Key Integration Steps
+
+### 1. Add dependencies
+
+Add these to your `pubspec.yaml`:
+
+```yaml
 dependencies:
   flutter_zoom_videosdk: ^1.14.0
   permission_handler: ^11.4.0
@@ -114,9 +122,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-Replace 'YOUR_GENERATED_JWT' and 'MEETING_ID' with actual values.
-
-Resources
-Original article: Integrate Flutter Zoom VideoCalling
-
-Official Zoom Video SDK docs: https://marketplace.zoom.us/docs/sdk/video
