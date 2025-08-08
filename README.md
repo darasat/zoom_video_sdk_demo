@@ -124,7 +124,7 @@ class MyApp extends StatelessWidget {
 }
 Replace 'YOUR_GENERATED_JWT' and 'MEETING_ID' with actual values.
 
-Resources
+## Resources
 Original article: Integrate Flutter Zoom VideoCalling
 
 Official Zoom Video SDK docs: https://marketplace.zoom.us/docs/sdk/video
