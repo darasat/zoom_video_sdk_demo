@@ -1,4 +1,3 @@
-
 # zoom_video_sdk_demo
 
 This Flutter project demonstrates how to integrate Zoom Video SDK to enable video calls, following the tutorial explained in my Medium article:  
@@ -18,7 +17,9 @@ The article walks through the entire process — from initial setup, JWT generat
 
 - Flutter installed ([Flutter installation guide](https://flutter.dev/docs/get-started/install))  
 - Zoom Developer account with SDK Key and SDK Secret from [Zoom Marketplace](https://marketplace.zoom.us/)  
-- Camera and microphone permissions configured for Android and iOS  
+- Camera and microphone permissions configured for Android and iOS
+
+
 
 ---
 
@@ -28,34 +29,34 @@ The article walks through the entire process — from initial setup, JWT generat
 
 Add these to your `pubspec.yaml`:
 
-```yaml
+
 dependencies:
   flutter_zoom_videosdk: ^1.14.0
   permission_handler: ^11.4.0
   dart_jsonwebtoken: ^2.13.0
-2. Configure permissions
+### 2. Add dependencies
 AndroidManifest.xml:
 
 xml
-Copiar código
+Copiar
+Editar
 <uses-permission android:name="android.permission.CAMERA" />
 <uses-permission android:name="android.permission.RECORD_AUDIO" />
 <uses-permission android:name="android.permission.INTERNET" />
 Info.plist for iOS:
 
 xml
-Copiar código
 <key>NSCameraUsageDescription</key>
 <string>Camera access is required for video calls.</string>
 <key>NSMicrophoneUsageDescription</key>
 <string>Microphone access is required for video calls.</string>
-3. Generate JWT
+
+### 3 Generate JWT
 The article includes an example of generating the JWT token, which is necessary for authentication.
 
 For security, generate this token in your backend, but for testing, you can generate it locally as follows:
 
 dart
-Copiar código
 import 'dart:math';
 import 'package:dart_jsonwebtoken/dart_jsonwebtoken.dart';
 
@@ -83,11 +84,12 @@ String generateJwt(String sdkKey, String sdkSecret, String sessionName, int role
 
   return jwt.sign(SecretKey(sdkSecret));
 }
-4. Use Zoom SDK in Flutter
+### 4 Use Zoom SDK in Flutter
 Example main.dart showing how to create the Zoom view:
 
 dart
-Copiar código
+Copiar
+Editar
 import 'package:flutter/material.dart';
 import 'package:flutter_zoom_videosdk/flutter_zoom_view.dart' as zoom;
 
@@ -125,7 +127,7 @@ class MyApp extends StatelessWidget {
 }
 Replace 'YOUR_GENERATED_JWT' and 'MEETING_ID' with actual values.
 
-Resources
+## Resources
 Integrate Flutter Zoom VideoCalling
 
 Official Zoom Video SDK docs
