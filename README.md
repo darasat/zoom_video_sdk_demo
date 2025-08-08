@@ -37,15 +37,11 @@ dependencies:
 ### 2. Add dependencies
 AndroidManifest.xml:
 
-xml
-Copiar
-Editar
 <uses-permission android:name="android.permission.CAMERA" />
 <uses-permission android:name="android.permission.RECORD_AUDIO" />
 <uses-permission android:name="android.permission.INTERNET" />
 Info.plist for iOS:
 
-xml
 <key>NSCameraUsageDescription</key>
 <string>Camera access is required for video calls.</string>
 <key>NSMicrophoneUsageDescription</key>
