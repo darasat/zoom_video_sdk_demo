@@ -258,7 +258,7 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 
 **@darasat**
 - Medium: [@darasat](https://medium.com/@darasat)
-- GitHub: [Tu perfil de GitHub]
+- GitHub: [https://github.com/darasat]
 
 ---
 
